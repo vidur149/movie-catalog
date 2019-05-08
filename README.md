@@ -1,7 +1,4 @@
-# Kanban
-
-A simple Kanban app in which you can drag and drop tasks like in a trello board. Built using React and React-beautiful DnD. Also, task lists are stored in local storage so even if you close your browser the tasks are not lost. :D
-
+# Movie Catalog
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Steps to Start
