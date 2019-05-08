@@ -22,7 +22,8 @@ function MovieCard(props) {
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image={Poster}
+          image={Poster ? Poster : ""}
+          style={{ backgroundColor: 'gray' }}
           title={Title}
         />
         <CardContent>
