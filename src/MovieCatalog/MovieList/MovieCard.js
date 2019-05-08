@@ -8,6 +8,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import { Chip } from '@material-ui/core';
+import Placeholder from './placeholder.png';
 
 const styles = {
   media: {
@@ -22,8 +23,8 @@ function MovieCard(props) {
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image={Poster ? Poster : ""}
-          style={{ backgroundColor: 'gray' }}
+          image={Poster !== 'N/A' ? Poster : Placeholder}
+          style={{ backgroundColor: 'black' }}
           title={Title}
         />
         <CardContent>
