@@ -19,7 +19,7 @@ const TaskHandlers = compose(
     mapStateToProps,
     mapDispatchToProps
   ),
-  withState('searchValue', 'setSearchValue', '')
+  withState("searchValue", "setSearchValue", "")
 );
 
 export default TaskHandlers;

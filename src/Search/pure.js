@@ -1,6 +1,6 @@
-import React from 'react';
-import { InputBase } from '@material-ui/core';
-import SearchIcon from '@material-ui/icons/Search';
+import React from "react";
+import { InputBase } from "@material-ui/core";
+import SearchIcon from "@material-ui/icons/Search";
 
 const HeaderPure = props => {
   const { searchValue, handleSearchChange, classes } = props;
@@ -11,15 +11,15 @@ const HeaderPure = props => {
       </div>
       <InputBase
         value={searchValue}
-        onChange={(event) => handleSearchChange(event)}
+        onChange={event => handleSearchChange(event)}
         placeholder="Search…"
         classes={{
           root: classes.inputRoot,
-          input: classes.inputInput,
+          input: classes.inputInput
         }}
       />
     </div>
   );
-}
+};
 
 export default HeaderPure;

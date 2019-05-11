@@ -1,6 +1,5 @@
 import Pure from "./pure";
 import Handlers from "./handlers";
+const Header = Handlers(Pure);
 
-const TodoForm = Handlers(Pure);
-
-export default TodoForm;
+export default Header;

@@ -6,19 +6,19 @@ import {
 import axios from "axios";
 
 export const fetchMovies = (search, page) => {
-  return (dispatch) => {
+  return dispatch => {
     dispatch({
       type: FETCH_MOVIE_REQUEST
     });
-    const baseUrl = 'https://www.omdbapi.com/?i=tt3896198&apikey=8523cbb8';
+    const baseUrl = "https://www.omdbapi.com/?i=tt3896198&apikey=8523cbb8";
     axios
       .get(
-        `${baseUrl}${
-        search ? `&s=${search}` : ''
-        }${page ? `&page=${page}` : ''}`
+        `${baseUrl}${search ? `&s=${search}` : ""}${
+          page ? `&page=${page}` : ""
+        }`
       )
       .then(res => {
-        if (res.data.Response !== 'False' && search) {
+        if (res.data.Response !== "False" && search) {
           return dispatch({
             type: FETCH_MOVIE_SUCCESS,
             payload: Object.assign({}, res.data, { page: page })

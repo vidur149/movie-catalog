@@ -1,6 +1,5 @@
 import { connect } from "react-redux";
-import { compose, branch, renderComponent } from "recompose";
-import { LoadingScreen } from "../../common/LoadingScreen";
+import { compose } from "recompose";
 
 const mapStateToProps = state => {
   return {
@@ -12,10 +11,6 @@ const MovieListHandlers = compose(
   connect(
     mapStateToProps,
     null
-  ),
-  branch(
-    ({ movies: { loading } }) => loading,
-    renderComponent(LoadingScreen)
   )
 );
 

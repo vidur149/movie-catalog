@@ -1,8 +1,8 @@
 import {
   FETCH_MOVIE_FAILURE,
   FETCH_MOVIE_SUCCESS,
-  FETCH_MOVIE_REQUEST,
-} from './types';
+  FETCH_MOVIE_REQUEST
+} from "./types";
 
 const INITIAL_STATE = {
   loading: false,

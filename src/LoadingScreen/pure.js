@@ -1,7 +1,7 @@
-import React from 'react';
-import CircularProgress from '@material-ui/core/CircularProgress';
-import Typography from '@material-ui/core/Typography';
-import { NormalLoader } from './styles';
+import React from "react";
+import CircularProgress from "@material-ui/core/CircularProgress";
+import Typography from "@material-ui/core/Typography";
+import { NormalLoader } from "./styles";
 
 const LoadingScreen = () => {
   return (
